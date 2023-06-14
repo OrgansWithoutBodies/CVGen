@@ -24,7 +24,7 @@ const schoolLine = ({ place, timeframe, description }: Education) =>
 const publicationLine = ({ DOI, journal, issue, title }: Publication) =>
   `\\CVItem{\\normalsize{${title}}}{\\textit{${journal}} ${issue}. \\textbf{${DOI}}}`;
 
-const cvTemplate = ({
+export const cvTemplate = ({
   humanLangsString,
   computerTechnologiesString,
   publicationsString,
